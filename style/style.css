@@ -2,14 +2,15 @@
   --first-text-color: #212121;
   --background-color: #e5e5e5;
   --highlight-color: #2196f3;
+  --second-text-color: #ffffff;
+  --button-color: #f5f4fa;
+  --box-color: #2f303a;
+  --team-color: #f5f4fa;
 }
-body * {
-  text-decoration: none;
-  margin: 0;
-  list-style: none;
-  padding: 0;
-  font-family: Roboto, Raleway;
-  color: #212121;
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--first-text-color);
+  line-height: 1.2;
 }
 .logo {
   color: var(--first-text-color);
@@ -17,80 +18,108 @@ body * {
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
-  line-height: 1.5;
+  text-decoration: none;
 }
 .part-logo {
   color: var(--highlight-color);
 }
+/* list */
+
 /*links*/
 .social-links .link {
+  text-decoration: none;
   color: var(--first-text-color);
 }
 .social-links .link:hover,
 .link:focus {
   color: var(--highlight-color);
 }
+.social-links {
+  list-style-type: none;
+}
+.list {
+  list-style-type: none;
+}
+/* каробка для заглавия */
 .box {
-  background-color: #2f303a;
+  background-color: var(--box-color);
 }
 /*заглавие*/
 .heading {
-  color: #ffffff;
+  color: var(--second-text-color);
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.5;
+  line-height: 1.36;
 }
-/*button*/
+/*button portfolio*/
 .social-button .button {
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.5;
-  background-color: #f5f4fa;
+  line-height: 1.62;
+  background-color: var(--button-color);
   color: var(--first-text-color);
 }
-.social-button .button:focus .button:hover {
-  color: var(--highlight-color);
+.social-button .button:focus,
+.button:hover {
+  background-color: var(--highlight-color);
+  color: var(--second-text-color);
 }
 .box .button {
   cursor: pointer;
   font-weight: bold;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.8;
   background-color: var(--highlight-color);
   color: #ffffff;
 }
+.social-button {
+  list-style-type: none;
+}
 /*основные заголовки и описание к ним*/
-.head1 {
+.title {
   font-weight: bold;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.1;
 }
-.text1 {
+.text {
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.7;
 }
-.head2 {
+.aboutTeam {
   font-weight: bold;
   font-size: 36px;
-  line-height: 1.5;
+  line-height: 1.1;
 }
-.head3 {
+.boxTeam {
+  background-color: var(--team-color);
+}
+.ourTeam {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.1;
 }
-.text3 {
+.aboutText {
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.1;
 }
-.head4 {
+.work {
   font-weight: bold;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
 }
-.text4 {
+.aboutWork {
   font-weight: normal;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.8;
+}
+.boxFooter {
+  background-color: var(--box-color);
+}
+.address {
+  color: var(--second-text-color);
+}
+.linkFooter {
+  color: var(--second-text-color);
+  text-decoration: none;
 }
