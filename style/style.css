@@ -6,11 +6,14 @@
   --button-color: #f5f4fa;
   --box-color: #2f303a;
   --team-color: #f5f4fa;
+  --adress-color: #757575;
+  --second_address-color: rgba(255, 255, 255, 0.6);
 }
 body {
   font-family: Roboto, sans-serif;
   color: var(--first-text-color);
   line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 .logo {
   color: var(--first-text-color);
@@ -23,12 +26,24 @@ body {
 .part-logo {
   color: var(--highlight-color);
 }
+.logoFooter {
+  color: var(--second-text-color);
+  font-size: 26px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
 /* list */
 
 /*links*/
 .social-links .link {
+  font-size: 14px;
   text-decoration: none;
   color: var(--first-text-color);
+  font-style: normal;
+  font-weight: bold;
 }
 .social-links .link:hover,
 .link:focus {
@@ -40,6 +55,17 @@ body {
 .list {
   list-style-type: none;
 }
+.social-links-address .linkItem {
+  text-decoration: none;
+  font-size: 14px;
+  color: var(--adress-color);
+  font-style: normal;
+  font-weight: bold;
+}
+.social-links-address .link:hover,
+.link:focus {
+  color: var(--highlight-color);
+}
 /* каробка для заглавия */
 .box {
   background-color: var(--box-color);
@@ -50,9 +76,11 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  letter-spacing: 0.06em;
 }
 /*button portfolio*/
 .social-button .button {
+  font-family: Roboto, sans-serif;
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
@@ -67,11 +95,26 @@ body {
 }
 .box .button {
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.8;
   background-color: var(--highlight-color);
   color: #ffffff;
+}
+.buttonTitle {
+  font-family: Roboto, sans-serif;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  background-color: var(--button-color);
+  color: var(--first-text-color);
+  letter-spacing: 0.06em;
+}
+.buttonTitle:focus,
+.buttonTitle:hover {
+  background-color: var(--highlight-color);
+  color: var(--second-text-color);
 }
 .social-button {
   list-style-type: none;
@@ -85,6 +128,7 @@ body {
 .text {
   font-size: 14px;
   line-height: 1.7;
+  color: var(--adress-color);
 }
 .aboutTeam {
   font-weight: bold;
@@ -102,11 +146,13 @@ body {
 .aboutText {
   font-size: 16px;
   line-height: 1.1;
+  color: var(--adress-color);
 }
 .work {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
+  letter-spacing: 0.06em;
 }
 .aboutWork {
   font-weight: normal;
@@ -118,8 +164,10 @@ body {
 }
 .address {
   color: var(--second-text-color);
+  font-style: normal;
 }
 .linkFooter {
-  color: var(--second-text-color);
+  color: var(--second_address-color);
   text-decoration: none;
+  font-style: normal;
 }
